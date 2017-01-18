@@ -77,13 +77,7 @@ function figure_Seq(x, y)
     f.style.strokeStyle = FigureDefaults.strokeStyle;
 
     f.properties.push(new BuilderProperty('Text', 'primitives.1.str', BuilderProperty.TYPE_TEXT));
-    f.properties.push(new BuilderProperty('Text Size', 'primitives.1.size', BuilderProperty.TYPE_TEXT_FONT_SIZE));
-    f.properties.push(new BuilderProperty('Font', 'primitives.1.font', BuilderProperty.TYPE_TEXT_FONT_FAMILY));
-    f.properties.push(new BuilderProperty('Alignment', 'primitives.1.align', BuilderProperty.TYPE_TEXT_FONT_ALIGNMENT));
-    f.properties.push(new BuilderProperty('Text Underlined', 'primitives.1.underlined', BuilderProperty.TYPE_TEXT_UNDERLINED));
-    f.properties.push(new BuilderProperty('Text Color', 'primitives.1.style.fillStyle', BuilderProperty.TYPE_COLOR));
 
-//    f.properties.push(new BuilderProperty(BuilderProperty.SEPARATOR));
     f.properties.push(new BuilderProperty('Stroke Style', 'style.strokeStyle', BuilderProperty.TYPE_COLOR));
     f.properties.push(new BuilderProperty('Fill Style', 'style.fillStyle', BuilderProperty.TYPE_COLOR));
     f.properties.push(new BuilderProperty('Line Width', 'style.lineWidth',BuilderProperty.TYPE_LINE_WIDTH));
@@ -95,9 +89,7 @@ function figure_Seq(x, y)
     var rectangleHeight = FigureDefaults.segmentShortSize + 5;
 
     var r = new Polygon();
-//    var r = new Polyline();
-//    r.style.lineCap = r.style.STYLE_LINE_CAP_BUTT;
-//    r.style.lineJoin = r.style.STYLE_LINE_JOIN_MITER;
+
     r.addPoint(new Point(x, y));
     r.addPoint(new Point(x + FigureDefaults.segmentSize, y));
     r.addPoint(new Point(x + FigureDefaults.segmentSize, y + rectangleHeight));
@@ -109,14 +101,6 @@ function figure_Seq(x, y)
     t2.style.fillStyle = FigureDefaults.textColor;
 
     f.addPrimitive(t2);
-
-    //test line style
-//    f.addPrimitive(new Line(new Point(10, 10), new Point(300, 300)));
-    //end test
-
-//    //point
-//    var p = new Point(x + 50, y  +50);
-//    f.addPrimitive(p);
 
     var l = FigureDefaults.segmentShortSize + 5;
     //top
@@ -150,15 +134,8 @@ function figure_Split(x, y)
     f.style.fillStyle = FigureDefaults.fillStyle;
     f.style.strokeStyle = FigureDefaults.strokeStyle;
 
-
     f.properties.push(new BuilderProperty('Text', 'primitives.1.str', BuilderProperty.TYPE_TEXT));
-    f.properties.push(new BuilderProperty('Text Size', 'primitives.1.size', BuilderProperty.TYPE_TEXT_FONT_SIZE));
-    f.properties.push(new BuilderProperty('Font', 'primitives.1.font', BuilderProperty.TYPE_TEXT_FONT_FAMILY));
-    f.properties.push(new BuilderProperty('Alignment', 'primitives.1.align', BuilderProperty.TYPE_TEXT_FONT_ALIGNMENT));
-    f.properties.push(new BuilderProperty('Text Underlined', 'primitives.1.underlined', BuilderProperty.TYPE_TEXT_UNDERLINED));
-    f.properties.push(new BuilderProperty('Text Color', 'primitives.1.style.fillStyle', BuilderProperty.TYPE_COLOR));
 
-//    f.properties.push(new BuilderProperty(BuilderProperty.SEPARATOR));
     f.properties.push(new BuilderProperty('Stroke Style', 'style.strokeStyle', BuilderProperty.TYPE_COLOR));
     f.properties.push(new BuilderProperty('Fill Style', 'style.fillStyle', BuilderProperty.TYPE_COLOR));
     f.properties.push(new BuilderProperty('Line Width', 'style.lineWidth',BuilderProperty.TYPE_LINE_WIDTH));
@@ -202,15 +179,8 @@ function figure_Sync(x, y)
     f.style.fillStyle = FigureDefaults.fillStyle;
     f.style.strokeStyle = FigureDefaults.strokeStyle;
 
-
     f.properties.push(new BuilderProperty('Text', 'primitives.1.str', BuilderProperty.TYPE_TEXT));
-    f.properties.push(new BuilderProperty('Text Size', 'primitives.1.size', BuilderProperty.TYPE_TEXT_FONT_SIZE));
-    f.properties.push(new BuilderProperty('Font', 'primitives.1.font', BuilderProperty.TYPE_TEXT_FONT_FAMILY));
-    f.properties.push(new BuilderProperty('Alignment', 'primitives.1.align', BuilderProperty.TYPE_TEXT_FONT_ALIGNMENT));
-    f.properties.push(new BuilderProperty('Text Underlined', 'primitives.1.underlined', BuilderProperty.TYPE_TEXT_UNDERLINED));
-    f.properties.push(new BuilderProperty('Text Color', 'primitives.1.style.fillStyle', BuilderProperty.TYPE_COLOR));
 
-//    f.properties.push(new BuilderProperty(BuilderProperty.SEPARATOR));
     f.properties.push(new BuilderProperty('Stroke Style', 'style.strokeStyle', BuilderProperty.TYPE_COLOR));
     f.properties.push(new BuilderProperty('Fill Style', 'style.fillStyle', BuilderProperty.TYPE_COLOR));
     f.properties.push(new BuilderProperty('Line Width', 'style.lineWidth',BuilderProperty.TYPE_LINE_WIDTH));
